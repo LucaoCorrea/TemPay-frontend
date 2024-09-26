@@ -1,8 +1,8 @@
 export const dynamic = 'force-dynamic'
 
 import type { Metadata } from "next";
-import {Inter, Roboto_Mono, IBM_Plex_Serif} from "next/font/google";
-import "./global.css";
+import { Inter, IBM_Plex_Serif } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const ibmPlexSerif = IBM_Plex_Serif({
@@ -11,18 +11,11 @@ const ibmPlexSerif = IBM_Plex_Serif({
   variable: '--font-ibm-plex-serif'
 })
 
-
-const Roboto = Roboto_Mono({
-  subsets: ['latin'],
-  weight: ['500'],
-  variable: '--font-roboto-mono'
-})
-
 export const metadata: Metadata = {
   title: "TemPay",
-  description: "Your banking Digital",
+  description: "Your Banking Digital.",
   icons: {
-    icon: '/icons/logo.png'
+    icon: "../public/icons/logo.png"
   }
 };
 
@@ -32,12 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body
-        className={`${inter.variable} ${ibmPlexSerif.variable} ${Roboto.variable}`}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
     </html>
   );
 }
