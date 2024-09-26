@@ -5,7 +5,7 @@ const Home = () => {
   const loggedIn = { firstName: "Lucas" };
 
   return (
-    <section className="Home">
+    <section className="Home font-inter">
       <div className="home-content">
         <header className="home-header">
           <HeaderBox

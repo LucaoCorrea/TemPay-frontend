@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "TemPay",
   description: "Your Banking Digital.",
   icons: {
-    icon: "../public/icons/logo.png"
+    icon: '/icons/logo.png'
   }
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
     </html>
   );
