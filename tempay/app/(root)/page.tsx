@@ -16,10 +16,9 @@ const Home = () => {
           <HeaderBox
             type="greeting"
             title="Bem vindo"
-            user={loggedIn?.firstName || "Convidado"}
-            subtext="Acesse & administre suas financias."
+            user={" Lucas Corrêa" || "Convidado"}
+            subtext="Acesse & administre suas finanças."
           />
-
           <TotalBalanceBox
             accounts={[]}
             totalBanks={1}
